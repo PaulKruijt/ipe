@@ -1,0 +1,39 @@
+fw-text,
+fw-html,
+fw-image,
+fw-video,
+fw-audio,
+fw-link,
+fw-menu,
+fw-list,
+fw-form,
+fw-gallery,
+fw-component,
+fw-module,
+fw-date,
+fw-file,
+fw-include,
+fw-code,
+fw-sandbox,
+fw-switch,
+fw-select,
+fw-sandbox-include {
+	&:hover {
+		display: block;
+		outline: #0cf solid 1px;
+		position: relative;
+		
+		&:before {
+			background-color: #0cf;
+			color: rgba(255,255,255, .9);
+			content: attr(name);
+			font-size: 9px;
+			left: -1px;
+			line-height: 14px;
+			padding: 0 5px;
+			position: absolute;
+			top: -14px;
+			text-transform: uppercase;
+		}
+	}
+}

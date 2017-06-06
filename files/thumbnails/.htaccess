@@ -1,0 +1,11 @@
+<FilesMatch "^fw-secure-">
+order allow,deny
+allow from all
+</FilesMatch>
+
+RewriteEngine on
+RewriteBase /mach3framework/framework/
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php?thumbnail=$1 [L,QSA]

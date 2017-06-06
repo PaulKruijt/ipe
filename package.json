@@ -1,0 +1,26 @@
+{
+  "name": "ipe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack --progress --hide-modules",
+    "watch": "cross-env NODE_ENV=development webpack --watch --progress --hide-modules",
+    "hot": "cross-env NODE_ENV=development webpack-dev-server --inline --hot",
+    "production": "cross-env NODE_ENV=production webpack --progress --hide-modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://PaulKruijt@github.com/PaulKruijt/ipe.git"
+  },
+  "keywords": [],
+  "author": "Mach3Builders <pkruijt@mach3builders.nl>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PaulKruijt/ipe/issues"
+  },
+  "homepage": "https://github.com/PaulKruijt/ipe#readme",
+  "devDependencies": {
+    "laravel-mix": "^0.12.1"
+  }
+}
